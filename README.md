@@ -1,8 +1,7 @@
 # SFCC-job_ImportProductsImagesFromFTP
 
 ## Introduction
-This **Salesforce Commerce Cloud** cartridge provides Job For Importing Product Images from FTP server contains cartridge with Job Step, Job metadata and Documentation.
-
+This **Salesforce Commerce Cloud** cartridge provides Job For Importing Product Images from FTP serverthis repository contains a cartridge with Job Step, Job metadata, and Documentation.
 ## Implementation Documentation
 
 ### Pre Requests
