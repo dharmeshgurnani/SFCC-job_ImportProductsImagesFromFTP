@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+
+    <job job-id="FtpImportProductImages" priority="0">
+        <description>Imports images form FTP server to IMPEX {workingFolder}/unassigned, generate XML, move images file to CATALAOG's folder and imports catalogue</description>
+        <parameters/>
+        <flow>
+            <context site-id="Sites"/>
+            <step step-id="downloadImagesFromFTP" type="custom.CSComponents.FtpDownload" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="ServiceID">FtpImportProductImagesConnector</parameter>
+                    <parameter name="SourceFolder">/</parameter>
+                    <parameter name="TargetFolder">src/FtpImportProductImages/unassigned</parameter>
+                    <parameter name="Recursive">false</parameter>
+                    <parameter name="NoFileFoundStatus">ERROR</parameter>
+                    <parameter name="IsDisabled">true</parameter>
+                </parameters>
+            </step>
+            <step step-id="generateXMLForImageImport" type="custom.FtpImportProductImages" enforce-restart="true">
+                <description/>
+                <parameters>
+                    <parameter name="catalogId">electronics-m-catalog</parameter>
+                    <parameter name="workingFolder">src/FtpImportProductImages/</parameter>
+                </parameters>
+                <rules>
+                    <on-exit status="ERROR">
+                        <stop-job/>
+                    </on-exit>
+                    <on-exit status="*">
+                        <continue/>
+                    </on-exit>
+                </rules>
+            </step>
+            <step step-id="importImagesCatalog" type="ImportCatalog" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="WorkingFolder">FtpImportProductImages/xml</parameter>
+                    <parameter name="NoFilesFoundHandling">ERROR</parameter>
+                    <parameter name="ImportMode">Merge</parameter>
+                    <parameter name="ImportFailedHandling">WARN</parameter>
+                    <parameter name="AfterImportFileHandling">Keep</parameter>
+                    <parameter name="ArchiveFolder">archive</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-01-31Z</date>
+                <time>14:18:36.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+</jobs>
