@@ -1,0 +1,53 @@
+{
+    "step-types": {
+        "script-module-step": [
+            {
+                "@type-id": "custom.FtpImportProductImages",
+                "module": "util_ftp_import_product_images/cartridge/scripts/steps/ImportProductImages",
+                "function": "execute",
+                "parameters": {
+                    "parameter": [
+                        {
+                            "@name": "catalogId",
+                            "description": "Catalog ID for XML",
+                            "@type": "string",
+                            "@required": "true",
+                            "@trim": "true"
+                        },
+                        {
+                            "@name": "workingFolder",
+                            "@type": "string",
+                            "@required": "true",
+                            "description": "Working Folder Local folder where images are at and to store XML files, relative to IMPEX/, default WF is: IMPEX/src/FTPimageImport/",
+                            "@trim": "true",
+                            "default-value": "src/FtpImportProductImages/"
+                        },
+                        {
+                            "@name": "removeFilesAfterImport",
+                            "description": "Remove Product Images form ImagesFolderPath folder",
+                            "@type": "boolean",
+                            "@required": "false",
+                            "@trim": "true"
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Used when an error occurred."
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Used when everything went well."
+                        },
+                        {
+                            "@code": "WARN",
+                            "description": "Used when small, but acceptable problems occurred."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
