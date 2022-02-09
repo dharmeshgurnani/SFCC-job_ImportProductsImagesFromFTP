@@ -2,11 +2,12 @@
 
 # SFCC-job_ImportProductsImagesFromFTP
 <p align="center">
-<img alt="visitor" src="https://visitor-badge.laobi.icu/badge?page_id=dharmeshgurnani.SFCC-job_ImportProductsImagesFromFTP">
-<img alt="commits since tagged version" src="https://img.shields.io/github/commits-since/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/v1.0.0">
-<img alt="last commit" src="https://img.shields.io/github/last-commit/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
-<img alt="code size in bytes" src="https://img.shields.io/github/languages/code-size/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
-<img alt="downloads" src="https://img.shields.io/github/downloads/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/total.svg">
+    <img alt="visitor"              src="https://visitor-badge.laobi.icu/badge?page_id=dharmeshgurnani.SFCC-job_ImportProductsImagesFromFTP">
+    <img alt="release"              src="https://img.shields.io/github/v/release/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP?color=green">
+    <img alt="commits since"        src="https://img.shields.io/github/commits-since/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/v1.0.0">
+    <img alt="last commit"          src="https://img.shields.io/github/last-commit/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
+    <img alt="code size in bytes"   src="https://img.shields.io/github/languages/code-size/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
+    <img alt="downloads"            src="https://img.shields.io/github/downloads/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/total.svg">
 </p>
 
 ## Introduction
