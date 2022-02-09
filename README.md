@@ -7,7 +7,6 @@
     <img alt="commits since"        src="https://img.shields.io/github/commits-since/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/v1.0.0">
     <img alt="last commit"          src="https://img.shields.io/github/last-commit/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
     <img alt="code size in bytes"   src="https://img.shields.io/github/languages/code-size/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP">
-    <img alt="downloads"            src="https://img.shields.io/github/downloads/dharmeshgurnani/SFCC-job_ImportProductsImagesFromFTP/total.svg">
 </p>
 
 ## Introduction
