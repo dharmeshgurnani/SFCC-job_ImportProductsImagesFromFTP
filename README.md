@@ -50,22 +50,22 @@ This **Salesforce Commerce Cloud** cartridge provides Job For Importing Product 
               └──unassigned  # contains folders that represent a catalog (data gets downloaded from FTP server using job step 1).
                   ├──catalogId1   # catalog folder name as a valid catalog id contains folders representing products.
                   │   ├──productId1    # product folder contains product Images.
-                  │   │   ├──productid1_P_01.jpg
+                  │   │   ├──productid1_large_P_01.jpg
                   │   │   ├──productid1_P_02.jpg
                   │   │   └──productid1_P_03.jpg
                   │   └──productId2
-                  │       ├──productid2_P_01.jpg
-                  │       ├──productid2_P_02.jpg
-                  │       └──productid2_P_03.jpg
+                  │       ├──productid2_large_P_01.jpg
+                  │       ├──productid2_small_P_02.jpg
+                  │       └──productid2_small_P_03.jpg
                   └──catalogId2
                      ├──productId1
-                     │   ├──productid1_P_01.jpg
-                     │   ├──productid1_P_02.jpg
-                     │   └──productid1_P_03.jpg
+                     │   ├──productid1_large_P_01.jpg
+                     │   ├──productid1_small_P_02.jpg
+                     │   └──productid1_small_P_03.jpg
                      └──productId2
-                         ├──productid2_P_01.jpg
-                         ├──productid2_P_02.jpg
-                         └──productid2_P_03.jpg
+                         ├──productid2_large_P_01.jpg
+                         ├──productid2_small_P_02.jpg
+                         └──productid2_small_P_03.jpg
 
 
 #### Image file name syntex.
@@ -85,7 +85,7 @@ This **Salesforce Commerce Cloud** cartridge provides Job For Importing Product 
 
 * syntex:
 
-  {productID}\_P\_{image position}.{extention}
+  {productID}\_{viewType}\_P\_{image position}.{extention}
 * example:
 
     productid1_large_P_01.jpg
